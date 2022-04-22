@@ -13,7 +13,7 @@
 /out/
 
 # production
-/build
+/buildgit 
 
 # misc
 .DS_Store
