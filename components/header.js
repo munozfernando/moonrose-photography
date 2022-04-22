@@ -14,7 +14,7 @@ export default function Header() {
             <div className={styles.navMenu}>
                 <div className={styles.navButtonContainer}>
                     <Link href="/showcase/all">
-                        <a className={styles.navButton}>Showcase</a>
+                        <a className={styles.navButton}>Portfolio</a>
                     </Link>
                     {' '}
                     <Link href="/booking/appointment">

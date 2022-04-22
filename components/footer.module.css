@@ -1,23 +1,26 @@
 .navMenu {
     position: fixed;
+    bottom: 0;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content:flex-end;
     background-color: rgba(37, 0, 0, 0.02);
     backdrop-filter: blur(10px);
+    min-height: 2vw;
 }
 
-.navButtonContainer {
+.socialMediaIconContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 5vw;
-    min-height: 50px;
+    min-height: 15px;
 }
 
-.navButton {
-    padding: 1vw 2vw;
-    text-shadow: .05rem .15rem 1rem rgb(162, 145, 189);
-    font-size: 1.5rem;
+.socialMediaIcon {
+    padding: .5vw;
+    min-height: 10px;
+}
+.convertToWhite {
+    filter: invert(100%)
 }
