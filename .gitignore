@@ -7,6 +7,7 @@
 
 # testing
 /coverage
+/public/sample-data
 
 # next.js
 /.next/

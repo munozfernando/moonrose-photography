@@ -23,7 +23,7 @@ export default function Header() {
                     <div className={styles.logoContainer}>
                         <Image
                             className={styles.logo}
-                            src="/../public/mrp_logo.png"
+                            src="/mrp_logo.png"
                             alt="Logo picture of Moonrose Photography: a circle with pink flowers surrounds the words 'Moon Rose Photography'"
                             width={150}
                             height={150}

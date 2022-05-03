@@ -1,11 +1,12 @@
 import Header from './header'
 import Footer from './footer'
+import styles from './layout.module.css'
 
-export default function Layout({children}){
+export default function Layout({ children }) {
     return (
-        <section>
+        <section className={styles.viewPort}>
             <Header></Header>
-            <main>{children}</main>
+            <main className={styles.contentPort}>{children}</main>
             <Footer></Footer>
         </section>
     )

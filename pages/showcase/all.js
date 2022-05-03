@@ -1,20 +1,6 @@
-import Layout from "../../components/layout"
+import UploadContainer from '../../components/image-upload/upload-container';
 
 export default function All() {
-    return (
-        <section>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-            <h1>Potatoes area for previous clients</h1>
-        </section>
-    )
+   return <UploadContainer></UploadContainer>
 }
+

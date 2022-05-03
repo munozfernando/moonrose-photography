@@ -13,8 +13,7 @@ export default function Footer() {
                     className={styles.socialMediaIcon}
                 >
                     <Image
-                        
-                        src="/../public/f_logo_RGB-White_144.png"
+                        src="/f_logo_RGB-White_144.png"
                         alt="Facebook logo linking to Moonrose Photography's Facebook page"
                         width={25}
                         height={25}
@@ -31,7 +30,7 @@ export default function Footer() {
                 >
                     <Image
                         className={styles.convertToWhite}
-                        src="/../public/glyph-logo_May2016.png"
+                        src="/glyph-logo_May2016.png"
                         alt="Facebook logo linking to Moonrose Photography's Facebook page"
                         width={25}
                         height={25}

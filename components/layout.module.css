@@ -1,0 +1,10 @@
+.contentPort {
+  flex: 1;
+  min-height: 85vh;
+}
+
+.viewPort {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}

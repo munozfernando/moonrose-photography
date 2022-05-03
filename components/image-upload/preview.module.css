@@ -1,0 +1,51 @@
+.uploadPreviewContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 1vw;
+  column-gap: 1vw;
+}
+
+/* First item in last row and all items in the last row
+ that are preceded by the first item in the last row in .imagePreviewContainer 
+.imagePreviewContainer:nth-child(4n+1):nth-last-child(-n+4),
+.imagePreviewContainer:nth-child(4n+1):nth-last-child(-n+4) ~ .imagePreviewContainer {
+  padding-bottom: 3vw;
+}
+*/
+
+.imagePreviewContainer {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.uploadContent {
+  max-width:22vw;
+}
+
+.uploadProgressBar {
+  width: 20vw;
+  height: 2vw;
+}
+
+.uploadCancel {
+  position: relative;
+  width: 1.5vw;
+  height: 1.5vw;
+  top: .75vw;
+  left: 46%;
+  z-index: 1;
+  border-radius: 50%;
+  background-color: rgba(214, 183, 107, .25);
+  border-color: rgba(255, 255, 255, 0.25);
+  color: rgb(0, 0, 0);
+}
+
+.uploadCancel:hover {
+  background-color: rgb(255, 201, 201);
+  border-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+
