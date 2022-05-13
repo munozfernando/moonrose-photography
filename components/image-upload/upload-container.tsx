@@ -24,6 +24,9 @@ export default class UploadContainer extends Component<{}, UploadContainerState>
         }
     }
 
+    /** 
+     * TODO: Force re-rernder when same file set is uploaded 
+    */
     public onFileChange(event: ChangeEvent<HTMLInputElement>):void {
         const validateExtensions = () => {
             // for(let i = 0; i < event.target.files.length; i++ ){
@@ -50,7 +53,7 @@ export default class UploadContainer extends Component<{}, UploadContainerState>
         })
     }
 
-    generateFileUploads(files: FileList): Array<TUpload> {
+    private generateFileUploads(files: FileList): Array<TUpload> {
         let newUploads = new Array<TUpload>()
         for (let i = 0; i < files.length; i++) {
             let url = URL.createObjectURL(files[i])
@@ -66,7 +69,7 @@ export default class UploadContainer extends Component<{}, UploadContainerState>
         return newUploads;
     }
 
-    onFileUpload():void {
+    private onFileUpload():void {
         // Create a new request to send each file to server
         for (let i = 0; i < this.state.uploads.length; i++) {
             let file = this.state.uploads[i].file;

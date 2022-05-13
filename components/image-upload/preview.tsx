@@ -11,7 +11,7 @@ export default class Previewer extends Component<{ uploads: Array<TUpload> }, {}
             return (<div key={`container-${e.url}`} className={styles.imagePreviewContainer}>
                         <button name={e.url} className={styles.uploadCancel} onClick={(mouseEvent) => e.removeSelf(mouseEvent)}>x</button>
                         <img className={styles.uploadContent} src={e.url} />
-                        <progress className={`${styles.uploadContent} ${styles.uploadProgressBar}`} value={e.progress} max="100" />
+                        {e.progress !== 0 ? <progress className={`${styles.uploadContent} ${styles.uploadProgressBar}`} value={e.progress} max="100" /> :<></>}
                     </div>
                     )
                 }
