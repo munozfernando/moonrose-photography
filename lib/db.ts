@@ -1,4 +1,4 @@
-import mysql from 'mysql2';
+import mysql from 'mysql2'
 
 const connectionPool =  mysql.createPool({
     host: process.env.DB_DOMAIN,
@@ -7,7 +7,7 @@ const connectionPool =  mysql.createPool({
     password: process.env.DB_PASSWORD,
     port: Number.parseInt(process.env.DB_PORT),
     waitForConnections: true,
-    connectionLimit: 25,
+    connectionLimit: 100,
     queueLimit: 0
 }).promise()
 
@@ -24,4 +24,4 @@ class DBConnection {
     }
 }
 
-export default new DBConnection(connectionPool);
+export default new DBConnection(connectionPool)

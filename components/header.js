@@ -38,6 +38,9 @@ export default function Header() {
                     <Link href="/blog/all">
                         <a className={styles.navButton}>Blog</a>
                     </Link>
+                    <Link href="/upload/image">
+                        <a className={styles.navButton}>Upload Photos</a>
+                    </Link>
                 </div>
             </div>
         </div>
